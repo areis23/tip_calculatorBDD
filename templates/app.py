@@ -4,11 +4,11 @@ app = Flask(__name__)
  
 @app.route('/')
 def home():
-	return render_template('home.html')
- 
-if __name__ == '__main__':
-	app.run(debug=True)
+	return render_template('results.html')
 
 @app.route('/results', methods=['POST'])
 def results():
 	return render_template('results.html')
+ 
+if __name__ == '__main__':
+  	app.run(debug=True)
